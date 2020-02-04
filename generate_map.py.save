@@ -1,0 +1,8 @@
+import folium
+from locations-jinja import get_locations
+
+m = folium.Map(location= [52.4051, -1.5133], zoom_start = 12)
+tooltip = "Click here for inf
+for data in pulled_data_from_db():
+	folium.Marker([52.4060, -1.5006], popup='<strong>Location One</strong>',tooltip=tooltip).add_to(m)
+m.save('map.html')
